@@ -71,10 +71,10 @@ public class ActivitiesMenuDrawer extends DrawerLayout {
                     if (mView != null) mDrawerView.removeHeaderView(mView);
                     mDrawerView.addHeaderView(rv);
                     if (mView != null) mDrawerView.addHeaderView(mView);
-                    recentMenuAdded = true;
                 }else{
                     mDrawerView.addHeaderView(rv);
                 }
+                recentMenuAdded = true;
                 for(activity act : actlist){
                     list.add(act);
                     adapter.notifyDataSetChanged();
