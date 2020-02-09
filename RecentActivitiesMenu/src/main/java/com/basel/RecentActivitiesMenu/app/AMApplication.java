@@ -74,7 +74,7 @@ public class AMApplication extends Application implements Application.ActivityLi
 
     }
 
-    public boolean proccessActivityView(Activity activity) {
+    private boolean proccessActivityView(Activity activity) {
         View windowView = activity.getWindow().getDecorView().findViewById(android.R.id.content);
         if(windowView==null)return false;
         View screenView = windowView.getRootView();
