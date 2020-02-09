@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/layout_header"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:gravity="center_vertical">
+        <ImageView
+            android:padding="14dp"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_test" />
+        <TextView
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Username"/>
+    </LinearLayout>
+
+    <!--chat list created by Human Intelligence :)-->
+    <LinearLayout
+        android:layout_below="@+id/layout_header"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBack">
+        <include layout="@layout/chat_test_item_to" />
+        <include layout="@layout/chat_test_item_to" />
+        <include layout="@layout/chat_test_item_from" />
+        <include layout="@layout/chat_test_item_to" />
+        <include layout="@layout/chat_test_item_from" />
+        <include layout="@layout/chat_test_item_to" />
+        <include layout="@layout/chat_test_item_from" />
+        <include layout="@layout/chat_test_item_from" />
+        <include layout="@layout/chat_test_item_to" />
+        <include layout="@layout/chat_test_item_from" />
+        <include layout="@layout/chat_test_item_to" />
+        <include layout="@layout/chat_test_item_to" />
+        <include layout="@layout/chat_test_item_from" />
+        <include layout="@layout/chat_test_item_to" />
+        <include layout="@layout/chat_test_item_from" />
+        <include layout="@layout/chat_test_item_to" />
+        <include layout="@layout/chat_test_item_from" />
+        <include layout="@layout/chat_test_item_from" />
+        <include layout="@layout/chat_test_item_to" />
+        <include layout="@layout/chat_test_item_from" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:id="@+id/layout_chatbox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:minHeight="48dp"
+        android:background="#ffffff">
+
+        <EditText
+            android:id="@+id/edittext_chatbox"
+            android:hint="Enter message"
+            android:background="@android:color/transparent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:maxLines="6"/>
+
+        <Button
+            android:id="@+id/button_chatbox_send"
+            android:text="SEND"
+            android:textSize="14dp"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:layout_width="64dp"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:layout_gravity="bottom" />
+
+    </LinearLayout>
+
+</RelativeLayout>
+
