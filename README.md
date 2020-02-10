@@ -72,6 +72,10 @@ This Lib extends android support library DrawerLayout so you are free to deal wi
     drawerLayout.setRecentBelowHeader(false);//show recent menu below drawer header if any.
 
 ```
+# To-do
+ 1-Relay on stronger identifier of activities to avoid duplication.
+   Currently it uses hashCode, working on a way to idintify activity by its component name + intent extras, or the easiest way in worst cases is to manually call the lip to identify each activity.
+
 
 ## This lib uses AndroidX
 
